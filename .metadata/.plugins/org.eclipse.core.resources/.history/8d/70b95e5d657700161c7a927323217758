@@ -1,0 +1,9 @@
+package br.senai.informatica.todolist.modelo;
+
+import java.util.List;
+
+public class Lista {
+	private Long id;
+	private String titulo;
+	private Listist<ItemLista> itens;
+}

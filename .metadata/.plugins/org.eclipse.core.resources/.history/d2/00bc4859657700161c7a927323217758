@@ -1,0 +1,5 @@
+package br.senai.informatica.todolist.modelo;
+
+public class Lista {
+
+}
