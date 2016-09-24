@@ -5,10 +5,15 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
+import org.hibernate.engine.profile.Fetch;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 
 
@@ -21,7 +26,7 @@ public class Lista {
 	@Column(length = 1000/10)
 	private String titulo;
 	
-	@OneToMany(mappedBy = "lista", cascade=CascadeType.ALL, orphanRemoval=true)
+	@OneToMany(mappedBy = "lista", fetch=FetchType.EAGER, cascade=CascadeType.ALL, orphanRemoval=true)
 	private List<ItemLista> itens;
 		
 	
@@ -44,7 +49,7 @@ public class Lista {
 	public void setItens(List<ItemLista> itens) {
 		this.itens = itens;
 	}
-	
+	@JsonProperty(value="feito")
 	public boolean isRealizada(){
 		for(ItemLista item: itens){
 			if(!item.isFeito()){

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;br.senai.informatica.todolist.dao.itemDAO&apos; to &apos;ItemDAO&apos;&#x0D;&#x0A;- Original project: &apos;todolist&apos;&#x0D;&#x0A;- Original element: &apos;br.senai.informatica.todolist.dao.itemDAO&apos;&#x0D;&#x0A;- Renamed element: &apos;br.senai.informatica.todolist.dao.ItemDAO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;itemDAO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;br.senai.informatica.todolist.dao{itemDAO.java[itemDAO" matchStrategy="1" name="ItemDAO" qualified="false" references="true" similarDeclarations="false" stamp="1474727136880" textual="false" version="1.0"/>
+</session>
